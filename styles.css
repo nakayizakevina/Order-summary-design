@@ -1,16 +1,85 @@
 
 *{
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body{
     width: 100vw;
     height: 100vh;
+    /* background-image: url(./images/pattern-background-desktop.svg); */
     background-image: url(./images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
-   
+    justify-content: center;
     align-items: center;
+    /* border: 2px solid blue; */
+}
+
+.music-card{
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+    /* border: 2px solid red; */
+}
+
+.music-card__hero-img{
+    width: 345px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+
+    /* border-radius: 14px; */
+}
+
+.music-card__text-section{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 16px;
+    
+
+    /* border: 2px solid green; */
+}
+
+.music-card__text-section h1{
+    color: hsl(223, 47%, 23%);
+}
+
+
+.music-card__text-section p{
+    color:hsl(224, 23%, 55%);
+}
+
+.music-Card__price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.music-card__price-option{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    background-color: hsl(225, 100%, 98%);
+}
+
+button{
+    width: 100%;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 94%);
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.Music-card__cancel-order{
+    text-decoration: none;
+    color:hsl(224, 23%, 55%);
 }
